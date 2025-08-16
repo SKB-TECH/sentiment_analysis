@@ -46,6 +46,6 @@ if st.button('classify'):
     sentiment='Positive' if prediction[0][0]>0.5 else 'Negative'
     
     st.write(f'Sentiment: {sentiment}')
-    st.write(f'Prediction: {prediction}' )
+    st.write(f'Prediction: {prediction[0][0]}' )
 else:
     st.write("Please enter a movie review")
